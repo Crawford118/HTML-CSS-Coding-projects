@@ -1,0 +1,25 @@
+table {
+    boarder: 1px solid silver;
+}
+td:hover {
+     background-color: yellow;
+     color: black;
+}
+tr, th {
+    background-color: black;
+    color: cornsilk;
+}
+tr, td {
+    background-color: darkgreen;
+    color: white;
+}
+ol {
+  list-style-type: upper-roman;
+}
+ul {
+  list-style-type: square;
+}
+h1{
+   text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272,
+   -2px 4px 1px #767474, -3px 6px 1px #787777,-4px 8px 1px #868585;
+}
