@@ -1,0 +1,11 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background: #171717;
+	color: #ffffff;
+	font-family: Arial. Helvetica;
+}
+span{
+	display: table;
+	margin:0 auto;
+}
