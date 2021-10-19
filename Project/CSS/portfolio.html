@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <!-- Head -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Dante Crawford's Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="portfolio_css.css">
+    </head>
+    <!-- Body -->
+    <body class="Background">
+
+        <!-- Navbar -->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="GitHub">GitHub</a>
+            <a onclick="openForm()" ondblclick="closeForm()">Contact</a>
+        </div>
+        
+        <!-- Adding space between navbar and the heading -->
+        <br>
+        <br>
+
+        <!--Background-->
+        <div id="Home">
+            <video autoplay muted loop id="challenge_video">
+                <source src="challenge.mp4" type="video/mp4">
+                <!-- Message will display if video fails to play. -->
+                Your browser does not support this video.
+            </video>
+        </div>
+
+        <!--Video text-->
+        <div class="Video_Text">
+            <h1 class="white-text">Dante Crawford's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>Any fool can write code that a computer can understand.
+                        <br>Good programmers wirte code that humans can understand.
+                    </q>
+                        <br> - Martin Fowler
+                        <br>
+                        <br> My name is Dante Crawford. Welcome to my portfolio website.
+                        On it, I will tell you about my background and experience.
+                        <br> 
+                        <br> Thank you for stopping by and I hope you enjoy!
+                </p>
+            </strong>
+        </div>
+
+
+        <!-- Slideshow section -->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+                    <!-- Slide 1 of 4 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="fullstack.png" alt="full-stack picture">
+                        <div class="text">Please contact me if you need help on your project.</div>
+                    </div>
+                    <!-- Slide 2 of 4 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="python.png" alt="Python logo">
+                        <div class="text">the popular programming language Python,</div>
+                    </div>
+                    <!-- Slide 3 of 4 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="networking.png" alt="networking example">
+                        <div class="text"> Experience in Networking </div>
+                    </div>
+                    <!-- Slide 4 of 4 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images " src="team.png" alt="team player"> 
+                        <div class="text">I am a team player!</div>
+                    </div>
+                  <!-- Previous and next buttons -->
+                  <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="Next" onclick="plusSlides(1)">&#10095;</a>  
+                </div>
+                <br> <!-- Added space between slideshow and dots.-->
+
+                <!-- These dots are another way to navigate slideshow. -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span>  
+                </div>
+            </div>
+        </div>
+
+
+        <!--About section-->
+        <div class="Row" id="About">
+            <!--Left Column-->
+            <div class="Column_2">
+                <img src="about_pic.png" alt="Photo of me">
+            </div>
+            <!--Right Column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am cuurently a Police Officer, that is working towards starting a career in Tech. In my free time I love to travel and be active.
+                    <br>
+                                                                                                                                      <br> I am a student of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Cybersecurity Boot Camp, 
+                    So far I have learned the basics of Networking, Python, GitHub, Git Bash, Html, and CSS.
+                    <br>
+                    <br>I am hardworking, and personable, and would love the opportunity to work wth you. 
+                    <a href="#Contact">Contact</a> me below!
+
+                </p>
+            </div>
+        </div>
+
+        <!--GitHub section-->
+        <div class="Row" id="GitHub">
+            <!--Left column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center">
+                        <a href="https://github.com/crawford118" target="_blank">Dante Crawford's GitHub</a>
+                    </p>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <a href="https://github.com/crawford118" target="_blank"><img src="github.png" alt="GitHub logo"></a>
+            </div>
+        </div>
+        <!--Contact section-->
+    <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/f/mayavyze" method="POST" class="form-container">
+                    <h1>Contact</h1>
+                    <label for="name"><b>Name</b></label>
+                        <input type="text" placeholder="Please enter your name here" name="name" required>
+                    <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Please enter your email here" name="email" required>
+                    <label for="message"><b>Message</b></label>
+                        <input type="text" placeholder="Please write your message here" name="message">
+                        <br>
+                        <button type="submit" class="btn">SUBMIT</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                </form>
+            </div>
+    </div>
+    <!--Footer section-->
+    <footer>
+        <p>
+            <p class="center">&copy Getting to know Dante Inc.</p>
+            <br>
+        </p>
+    </footer>
+    <script src="portfolio_js.js"></script>
+    </body>
+</html>
